@@ -45,9 +45,15 @@ function ProjectRow({ project, index, isOpen, onToggle }) {
             </div>
           </div>
 
-          <div className="ledger-row__preview" aria-hidden="true">
-            <span className="project-preview__icon">{project.icon}</span>
-            <span className="project-preview__name">{project.title}</span>
+          <div className={`ledger-row__preview${project.image ? " ledger-row__preview--image" : ""}`} aria-hidden="true">
+            {project.image ? (
+              <img className="ledger-row__preview-image" src={project.image} alt="" loading="lazy" />
+            ) : (
+              <>
+                <span className="project-preview__icon">{project.icon}</span>
+                <span className="project-preview__name">{project.title}</span>
+              </>
+            )}
           </div>
         </div>
       </div>

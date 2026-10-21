@@ -20,7 +20,8 @@ const projects = [
     desc: "A full stack web application for fast and simple transfers, with a responsive interface and a server side API.",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     icon: "TX",
-    live: "#",
+    image: "/images/transfer-x-preview.png",
+    live: "https://transfer-x-tud8.onrender.com/",
     code: GITHUB
   },
   {
